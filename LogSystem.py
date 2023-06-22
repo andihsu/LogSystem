@@ -21,7 +21,7 @@ class LogSystem():
         if write_to_file:
             self.write_to_file('[ERROR]: ' + messages)
         else:
-            logger.error(messages)
+            pass
 
     def warning(self, messages, return_message=False, write_to_file=False):
 
@@ -33,7 +33,7 @@ class LogSystem():
         if write_to_file:
             self.write_to_file('[WARNING]: ' + messages)
         else:
-            logger.warning(messages)
+            pass
 
     def info(self, messages, return_message=False, write_to_file=False):
 
@@ -45,7 +45,7 @@ class LogSystem():
         if write_to_file:
             self.write_to_file('[INFO]: ' + messages)
         else:
-            logger.info(messages)
+            pass
 
     def debug(self, messages, return_message=False, write_to_file=False):
 
@@ -57,7 +57,7 @@ class LogSystem():
         if write_to_file:
             self.write_to_file('[DEBUG]: ' + messages)
         else:
-            logger.debug(messages)
+            pass
 
     def critical(self, messages, return_message=False, write_to_file=False):
 
@@ -69,4 +69,4 @@ class LogSystem():
         if write_to_file:
             self.write_to_file('[CRITICAL]: ' + messages)
         else:
-            logger.critical(messages)
+            pass
